@@ -22,7 +22,7 @@ header{
   width: 100%;
   background-color: white;
 }
-.intestazione{
+.head{
   position: relative;
   height: 300px;
   background-image: url(../img/foresta.jpg);
@@ -31,7 +31,7 @@ header{
   background-position: center;
   border: 10px solid white;
 }
-.intestazione .title{
+.head .title{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,11 +72,10 @@ li:last-child {
   text-decoration: none;
   padding: 0 15px;
 }
-.nav-bar li:hover{
-  border: 0;
-}
-.nav-bar li a:hover{
+
+.nav-bar li a:hover, .nav-bar li:hover{
   color: white;
+  border: 0;
   background-color: #302B27;
 }
 /* colonne */
@@ -128,8 +127,7 @@ li:last-child {
 /* colonna centrale */
 .col-center{
   width: 50%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 15px 5%;
   padding: 20px;
 }
 .col-center h2{
