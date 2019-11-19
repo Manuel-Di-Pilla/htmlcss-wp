@@ -17,6 +17,7 @@ main::after{
   margin: auto;
   padding: 10px 0;
 }
+/* header */
 header{
   width: 100%;
   background-color: white;
@@ -46,7 +47,7 @@ header{
   text-transform: uppercase;
   font-weight: bold;
 }
-
+/* menu */
 .nav-bar{
   height: 50px;
   line-height: 50px;
@@ -78,6 +79,7 @@ li:last-child {
   color: white;
   background-color: #302B27;
 }
+/* colonne */
 .col{
   float: left;
   margin: 15px 0;
@@ -90,6 +92,7 @@ li:last-child {
   border-radius: 10px;
   padding: 10px;
 }
+/* colonna sinistra */
 .title-col-left::after{
   content: "";
   display: table;
@@ -122,6 +125,7 @@ li:last-child {
 .col-left li a:hover{
   text-decoration: underline;
 }
+/* colonna centrale */
 .col-center{
   width: 50%;
   margin-left: 5%;
@@ -137,7 +141,7 @@ li:last-child {
   line-height: 30px;
   font-weight: bold;
 }
-
+/* colonna destra */
 .box{
   margin-bottom: 20px;
   background-color: white;
@@ -153,6 +157,7 @@ li:last-child {
   line-height: 30px;
   font-weight: bold;
 }
+/* footer */
 footer{
   background-color: white;
   border-radius: 3px;
@@ -160,6 +165,7 @@ footer{
 }
 footer .top p{
   border-bottom: 2px solid rgba(141,141,141,0.5);
+  padding: 2px 0;
   color: rgba(141,141,141,0.5);
   text-align: center;
   font-style: italic;
