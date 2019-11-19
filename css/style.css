@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(../img/sfondo.jpeg);
+}
+main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+  width: 70%;
+  margin: auto;
+  padding: 10px 0;
+}
+header{
+  width: 100%;
+  height: 300px;
+  background-color: white;
+}
+.intestazione{
+  position: relative;
+  height: 80%;
+  background-image: url(../img/foresta.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px solid white;
+}
+.intestazione .title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.title h1{
+  text-align: center;
+  font-size: 50px;
+}
+.title p{
+  font-size: 30px;
+}
+
+.nav-bar{
+  height: 20%;
+  background-color: #666666 ;
+}
+.nav-bar ul{
+  list-style: none;
+  text-align: center;
+  line-height: 59px;
+}
+.nav-bar li{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 15px;
+  color: rgb(201, 201, 201);
+  font-weight: bold;
+}
+.nav-bar li:hover{
+  color: white;
+  background-color: #302B27;
+  cursor: pointer;
+}
+.col{
+  float: left;
+  margin: 15px 0;
+}
+.col-left, .col-center{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.col-center{
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.col-left , .col-right{
+  width: 20%;
+}
+
+.box{
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+footer{
+  background-color: white;
+  border-radius: 3px;
+}
+footer .top{
+  border-bottom: 2px solid rgba(141,141,141,0.5);
+  color: rgba(141,141,141,0.5);
+  text-align: center;
+}
+footer .icons{
+  display: inline-block;
+  width: 33.3%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.icon{
+  color: rgba(141,141,141,0.5);
+  font-size: 40px;
+  vertical-align: middle;
+  cursor: pointer;
+}
