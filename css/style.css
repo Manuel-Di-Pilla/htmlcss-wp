@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(../img/sfondo.jpeg);
+  background-image: url(../img/sfondo.png);
+  font-family:'Raleway', sans-serif;
 }
 main::after{
   content: "";
@@ -18,15 +19,15 @@ main::after{
 }
 header{
   width: 100%;
-  height: 300px;
   background-color: white;
 }
 .intestazione{
   position: relative;
-  height: 80%;
-  background-image: url(../img/foresta.jpeg);
+  height: 300px;
+  background-image: url(../img/foresta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border: 10px solid white;
 }
 .intestazione .title{
@@ -35,52 +36,106 @@ header{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-}
-.title h1{
   text-align: center;
-  font-size: 50px;
+}
+.title img{
+  height: 200px;
 }
 .title p{
-  font-size: 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .nav-bar{
-  height: 20%;
+  height: 50px;
+  line-height: 50px;
   background-color: #666666 ;
 }
 .nav-bar ul{
   list-style: none;
   text-align: center;
-  line-height: 59px;
 }
-.nav-bar li{
+.nav-bar li {
   display: inline-block;
-  vertical-align: middle;
-  padding: 0 15px;
+  border-right: 1.5px inset #302B27;
+}
+
+li:last-child {
+  border-right: 0;
+}
+.nav-bar li a{
+  display: inline-block;
   color: rgb(201, 201, 201);
   font-weight: bold;
+  text-decoration: none;
+  padding: 0 15px;
 }
 .nav-bar li:hover{
+  border: 0;
+}
+.nav-bar li a:hover{
   color: white;
   background-color: #302B27;
-  cursor: pointer;
 }
 .col{
   float: left;
   margin: 15px 0;
+}
+.col-left , .col-right{
+  width: 20%;
 }
 .col-left, .col-center{
   background-color: white;
   border-radius: 10px;
   padding: 10px;
 }
+.title-col-left::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.title-col-left i, .title-col-left h3{
+  float: left;
+}
+.title-col-left i{
+  color: orange;
+  font-size: 25px;
+}
+.title-col-left h3{
+  width: 60%;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: 25px;
+  color: #504741;
+}
+.col-left li{
+  list-style: none;
+  padding: 5px 0;
+}
+.col-left li a{
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.col-left li a:hover{
+  text-decoration: underline;
+}
 .col-center{
   width: 50%;
   margin-left: 5%;
   margin-right: 5%;
+  padding: 20px;
 }
-.col-left , .col-right{
-  width: 20%;
+.col-center h2{
+  color: #504741;
+  text-shadow: 2px 2px 4px #504741;
+  margin-bottom: 50px;
+}
+.col-center p{
+  line-height: 30px;
+  font-weight: bold;
 }
 
 .box{
@@ -89,18 +144,29 @@ header{
   border-radius: 5px;
   padding: 10px;
 }
+.box h3{
+  color: #504741;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.box p{
+  line-height: 30px;
+  font-weight: bold;
+}
 footer{
   background-color: white;
   border-radius: 3px;
+  padding: 5px;
 }
-footer .top{
+footer .top p{
   border-bottom: 2px solid rgba(141,141,141,0.5);
   color: rgba(141,141,141,0.5);
   text-align: center;
+  font-style: italic;
 }
 footer .icons{
   display: inline-block;
-  width: 33.3%;
+  width: calc(100%/3);
   height: 100px;
   text-align: center;
   line-height: 100px;
@@ -109,5 +175,7 @@ footer .icons{
   color: rgba(141,141,141,0.5);
   font-size: 40px;
   vertical-align: middle;
-  cursor: pointer;
+}
+.icons a:hover i{
+  color: grey;
 }
